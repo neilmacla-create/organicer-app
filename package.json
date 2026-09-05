@@ -1,0 +1,37 @@
+{
+  "name": "organicer",
+  "version": "1.0.0",
+  "description": "Organicer - After Effects Workflow Automation Manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "keywords": ["organicer", "after-effects", "frameio", "googledrive", "automation"],
+  "author": "Organicer Tools",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "googleapis": "^134.0.0"
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.0"
+  },
+  "build": {
+    "appId": "com.organicer.app",
+    "productName": "Organicer",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "mac": {
+      "target": ["dmg", "zip"]
+    }
+  }
+}
