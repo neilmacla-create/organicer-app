@@ -50,8 +50,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Mac Installer
+      - name: Upload Mac App Bundle
         uses: actions/upload-artifact@v4
         with:
-          name: Organicer-Mac-Installer
-          path: dist/*.dmg
+          name: Organicer-Mac-App
+          path: dist/*.zip
