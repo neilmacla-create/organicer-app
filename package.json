@@ -30,6 +30,7 @@
   "build": {
     "appId": "com.organicer.app",
     "productName": "Organicer",
+    "publish": "never",
     "directories": {
       "output": "dist"
     },
