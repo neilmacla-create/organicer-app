@@ -50,11 +50,10 @@
         "portable"
       ]
     },
-   "mac": {
+    "mac": {
       "identity": null,
-      "target": ["dir"]
-    }
-        "zip"
+      "target": [
+        "dir"
       ]
     }
   }
