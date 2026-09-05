@@ -30,7 +30,10 @@
   "build": {
     "appId": "com.organicer.app",
     "productName": "Organicer",
-    "publish": "never",
+    "publish": {
+      "provider": "generic",
+      "url": "https://example.com"
+    },
     "directories": {
       "output": "dist"
     },
